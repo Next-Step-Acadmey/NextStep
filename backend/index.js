@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 require("dotenv").config();
+const pool = require("./models/db");
 const cores = require("cors");
 app.use(cores());
 
